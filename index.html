@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MainPage</title>
+    <link rel="stylesheet" href="./src/style/index.css">
+    <script type="module" src="./src/config/firebase.js"></script>
+    <script type="module" src="./src/logic/index.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0" />
+</head>
+
+<body>
+    <div class="contener">
+        <div class="header">Jocker Hunt</div>
+        <div class="lb" id="lb">
+            <span class="material-symbols-outlined" onclick="window.location.href='./pages/leaderBoard.html'">leaderboard</span>
+        </div>
+        <div class="submit">
+            <h1 class="submitHeader">Submit</h1>
+            <div class="form">
+                <div class="selectTeam">
+                    <label for="selectTeamName">Your Team</label>
+                    <select name="selectTeamName" class="selectTeamName" id="selectTeamName">
+                        <option value="" disabled selected>Select Your Team</option>
+                        <option value="0"> </option>
+                        <option value="1">PUZZLE JUGGLERS👾</option>
+                        <option value="2">&lt;-TEAMNAME-&gt;</option>
+                        <option value="3">&gt;NameTeam&lt;</option>
+                        <option value="4">3b1w</option>
+                        <option value="5">ALTU JALALTU</option>
+                        <option value="6">Astros</option>
+                        <option value="7">Ausandh</option>
+                        <option value="8">Ballman Sacs</option>
+                        <option value="9">Bhopal Knights</option>
+                        <option value="10">Bootyfinder</option>
+                        <option value="11">C.I.D.</option>
+                        <option value="12">Chambal ke daku</option>
+                        <option value="13">Choti Gold</option>
+                        <option value="14">Cigrattes after Padhai (CAP)</option>
+                        <option value="15">Comeback Kidz</option>
+                        <option value="16">DD PARTY</option>
+                        <option value="17">Desi dynamos</option>
+                        <option value="18">Dora-the-Explorers</option>
+                        <option value="19">Four-Play Experts</option>
+                        <option value="20">Garam Doodh</option>
+                        <option value="21">Grass touchers</option>
+                        <option value="22">HarleyQuinn Hunters</option>
+                        <option value="23">Hemro</option>
+                        <option value="24">Hum do hamare do</option>
+                        <option value="25">HunterX</option>
+                        <option value="26">Huntmonks</option>
+                        <option value="27">Kaam Bigada😎</option>
+                        <option value="28">Laapata gents</option>
+                        <option value="29">Loot legends</option>
+                        <option value="30">Mavericks</option>
+                        <option value="31">Orion</option>
+                        <option value="32">Pirate's pursuit</option>
+                        <option value="33">Puss in crocs</option>
+                        <option value="34">Puzzle Pals</option>
+                        <option value="35">rc_69</option>
+                        <option value="36">Royal Flush</option>
+                        <option value="37">RTIYP</option>
+                        <option value="38">Shadow seekers</option>
+                        <option value="39">SHAWA SHAWA</option>
+                        <option value="40">Team Vionix</option>
+                        <option value="41">Teen tigada 😎</option>
+                        <option value="42">The Crownëd Quëst</option>
+                        <option value="43">The practicals</option>
+                        <option value="44">The Uncharted</option>
+                        <option value="45">Tobey's Apostles</option>
+                        <option value="46">X Hunter X</option>
+                    </select>
+                </div>
+                <div class="selectLevel" id="selectLevel">
+                    <label for="selectLevelNum">Level</label>
+                    <select name="selectLevelNum" class="selectLevelNum" id="selectLevelNum">
+                        <option value="" disabled selected>Level</option>
+
+                    </select>
+                </div>
+                <div class="submitAns" id="submitAns">
+                    <label for="submitAnsBox">Password</label>
+                    <input type="text" class="submitAnsBox" id="ans">
+                </div>
+            </div>
+        </div>
+        <div class="submitBtnDiv" id="submitBtnDiv">
+            <button id="submitBtn">Submit</button>
+        </div>
+    </div>
+</body>
+
+</html>

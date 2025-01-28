@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leaderboard</title>
+  <link rel="stylesheet" href="../src/style/lb.css">
+  <script type="module" src="../src/logic/lb.js"></script>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,1,200" />
+</head>
+
+<body>
+  <div class="leaderboard-container">
+    <section class="featured-leaderboard" id="lbTop">
+      <div class="featured-item">
+        <div class="rank">2</div>
+        <div class="name" id="2ndTeamName"></div>
+        <div class="points" id="2ndTeamPoint"></div>
+      </div>
+      <div class="featured-item top-position-1" id="1stTeam">
+        <div class="rank">1</div>
+        <div class="name" id="1stTeamName"></div>
+        <div class="points" id="1stTeamPoint"></div>
+      </div>
+      <div class="featured-item" id="3rdTeam">
+        <div class="rank">3</div>
+        <div class="name" id="3rdTeamName"></div>
+        <div class="points" id="3rdTeamPoint"></div>
+      </div>
+    </section>
+
+
+    <ul class="leaderboard-list" id="leaderboard-list">
+      <!-- Data get from lb.js -->
+    </ul>
+  </div>
+
+  <div class="mp">
+    <span class="material-symbols-outlined" onclick="window.location.href='../index.html'">arrow_back_2</span>
+  </div>
+
+</body>
+
+</html>
