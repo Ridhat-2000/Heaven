@@ -1,4 +1,4 @@
-const API_URL = 'hell-roan.vercel.app';
+const API_URL = 'https://hell-roan.vercel.app';
 
 export async function sendAns(ans,level,teamNo) {
     try {
