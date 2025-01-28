@@ -41,6 +41,15 @@ async function getAns()
 {
     const ans = document.getElementById("ans").value;
     const level = document.getElementById("selectLevelNum").value
-    console.log(ans,level,teamNo)
-    await sendAns(ans,level,teamNo);
+    if(ans == null)
+        return
+    const result = await sendAns(ans,level,teamNo);
+    if(result != null){
+        console.log(result);
+        document.getElementById("form").style.display="none";
+        document.getElementById("submitHeader").innerHTML = "~: Congratulation :~";
+        const btn = document.getElementById("submitBtn");
+        btn.innerHTML= "Next Level";
+        btn.setAttribute("onclick", `window.location.href='${result}'`);
+    }
 }
