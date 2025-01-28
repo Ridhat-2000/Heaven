@@ -24,7 +24,7 @@ async function getLevelNum(){
         while (selectLevelNum.firstChild) {
             selectLevelNum.removeChild(selectLevelNum.firstChild);
         }
-        for(let i =1;i<=currentLevelNum;i++){
+        for(let i =0;i<=currentLevelNum;i++){
             const option = document.createElement("option");
             option.value = i;
             option.textContent = i;
