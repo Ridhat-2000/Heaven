@@ -13,9 +13,9 @@ export async function sendAns(ans,level,teamNo) {
         if (result.isCorrect) {
             console.log('Correct Answer!');
             console.log('Next Level:', result.nextLevel);
+            return result.nextLevel;
         } else {
             console.log('Incorrect Answer!');
-            return result.nextLevel;
         }
 
         if (response.ok){
