@@ -46,8 +46,8 @@ async function getAns()
     const result = await sendAns(ans,level,teamNo);
     if(result != null){
         console.log(result);
-        document.getElementById("form").style.display="none";
         document.getElementById("submitHeader").innerHTML = "~: Congratulation :~";
+        document.getElementById("form").style.display="none";
         const btn = document.getElementById("submitBtn");
         btn.innerHTML= "Next Level";
         btn.setAttribute("onclick", `window.location.href='${result}'`);
