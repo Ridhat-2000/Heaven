@@ -42,6 +42,7 @@ async function getAns()
     const ans = document.getElementById("ans").value;
     const level = document.getElementById("selectLevelNum").value
     document.getElementById("response").style.display="flex";
+    document.getElementById("check").innerHTML = "Checking...";
     if(ans == null)
         return
     const result = await sendAns(ans,level,teamNo);
