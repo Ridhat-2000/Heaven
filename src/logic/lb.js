@@ -66,39 +66,39 @@ async function loadLB(){
 }
 //.................................................................................//
 // Set up a real-time listener for changes to the 'teams' collection
-function setupLeaderboardListener() {
-  const teamsCollection = collection(db, "teams");
+// function setupLeaderboardListener() {
+//   const teamsCollection = collection(db, "teams");
 
-  onSnapshot(teamsCollection, (snapshot) => {
-    // Get all documents in the collection
-    const teams = snapshot.docs.map(doc => ({
-      id: doc.id,
-      ...doc.data()
-    }));
+//   onSnapshot(teamsCollection, (snapshot) => {
+//     // Get all documents in the collection
+//     const teams = snapshot.docs.map(doc => ({
+//       id: doc.id,
+//       ...doc.data()
+//     }));
 
-    // Check if any level value changed.
-      let levelChange = false;
-      const prevTeams = JSON.parse(localStorage.getItem("teams") || "[]");
-        if(prevTeams && prevTeams.length > 0){
-        teams.forEach(team=>{
-            const previousTeam = prevTeams.find(prev=> prev.id == team.id)
-            if(previousTeam && previousTeam.level != team.level){
-                levelChange = true;
-            }
-        })
-      } else{
-        levelChange = true;
-      }
+//     // Check if any level value changed.
+//       let levelChange = false;
+//       const prevTeams = JSON.parse(localStorage.getItem("teams") || "[]");
+//         if(prevTeams && prevTeams.length > 0){
+//         teams.forEach(team=>{
+//             const previousTeam = prevTeams.find(prev=> prev.id == team.id)
+//             if(previousTeam && previousTeam.level != team.level){
+//                 levelChange = true;
+//             }
+//         })
+//       } else{
+//         levelChange = true;
+//       }
 
-      if(levelChange){
-         console.log("Level changed, updating leaderboard")
-         loadLB();
-      }
-    localStorage.setItem("teams", JSON.stringify(teams));
-  }, (error) => {
-    console.error("Error listening for changes:", error);
-  });
-}
+//       if(levelChange){
+//          console.log("Level changed, updating leaderboard")
+//          loadLB();
+//       }
+//     localStorage.setItem("teams", JSON.stringify(teams));
+//   }, (error) => {
+//     console.error("Error listening for changes:", error);
+//   });
+// }
 
-// Call the listener setup function when the page loads or your application initializes
-setupLeaderboardListener();
+// // Call the listener setup function when the page loads or your application initializes
+// setupLeaderboardListener();
