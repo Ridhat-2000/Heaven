@@ -1,5 +1,4 @@
-import { getFirestore,getDoc,doc } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-firestore.js"; //https://www.gstatic.com/firebasejs/11.2.0/firebase-firestore.js
-
+import { getFirestore,getDoc,doc } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-firestore.js";
 import { app } from "../config/firebase.js";
 import { sendAns } from "../config/hell.js";
 
