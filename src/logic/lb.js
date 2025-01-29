@@ -4,7 +4,7 @@ import { app } from "../config/firebase.js";
 // Intilize Data_Base
 const db = getFirestore(app);
 
-loadLB();
+// loadLB();
 
 async function loadLB(){
     const leaderboardList = document.getElementById('leaderboard-list');
