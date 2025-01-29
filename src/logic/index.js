@@ -54,6 +54,8 @@ async function getAns()
         btn.innerHTML= "Next Level";
         btn.setAttribute("onclick", `window.location.href='${result}'`);
         document.getElementById("check").innerHTML = "~.. Good Job ..~";
+        if (result == "win")
+            btn.style.display = "none";
     }
     else
         document.getElementById("check").innerHTML = "...Wrong Answer...";
