@@ -41,6 +41,7 @@ async function getAns()
 {
     const ans = document.getElementById("ans").value;
     const level = document.getElementById("selectLevelNum").value
+    document.getElementById("response").style.display="flex";
     if(ans == null)
         return
     const result = await sendAns(ans,level,teamNo);
@@ -52,4 +53,6 @@ async function getAns()
         btn.innerHTML= "Next Level";
         btn.setAttribute("onclick", `window.location.href='${result}'`);
     }
+    else
+        document.getElementById("check").innerHTML = "...Wrong Answer...";
 }
