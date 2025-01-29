@@ -1,5 +1,6 @@
-import { getFirestore,getDocs,doc,collection,Timestamp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-firestore.js"; //https://www.gstatic.com/firebasejs/11.2.0/firebase-firestore.js
+import { getFirestore,getDocs,doc,collection,Timestamp } from "https://www.gstatic.com/firebasejs/11.2.0/firebase-firestore.js";
 import { app } from "../config/firebase.js";
+
 // Intilize Data_Base
 const db = getFirestore(app);
 
