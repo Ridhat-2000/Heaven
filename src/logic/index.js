@@ -53,6 +53,7 @@ async function getAns()
         const btn = document.getElementById("submitBtn");
         btn.innerHTML= "Next Level";
         btn.setAttribute("onclick", `window.location.href='${result}'`);
+        document.getElementById("check").innerHTML = "~.. Good Job ..~";
     }
     else
         document.getElementById("check").innerHTML = "...Wrong Answer...";
