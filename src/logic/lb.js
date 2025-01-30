@@ -40,7 +40,7 @@ async function loadLB(){
                   <div class="list-name">${team.name}</div>
                 </div>
                 <div class="list-score">
-                   Compleated
+                   Completed
                 </div>
               `;
             }
@@ -65,13 +65,13 @@ async function loadLB(){
             } if (index == 1){
                 document.getElementById("2ndTeamName").textContent = `${team.name}`;
                 if(team.level == 11)
-                    document.getElementById("2ndTeamPoint").textContent = "Compleated";
+                    document.getElementById("2ndTeamPoint").textContent = "Completed";
                 else
                     document.getElementById("2ndTeamPoint").textContent = `${team.level}`;
             } if (index == 2){
                 document.getElementById("3rdTeamName").textContent = `${team.name}`;
                 if(team.level == 11)
-                    document.getElementById("3rdTeamPoint").textContent = "Compleated";
+                    document.getElementById("3rdTeamPoint").textContent = "Completed";
                 else
                     document.getElementById("3rdTeamPoint").textContent = `${team.level}`;
             }
