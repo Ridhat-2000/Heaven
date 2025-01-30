@@ -33,7 +33,18 @@ async function loadLB(){
         teams.forEach((team, index) => {
             const listItem = document.createElement('li');
             listItem.classList.add('list-item');
-
+            if(team.level == 11){
+                listItem.innerHTML = `
+                <div class="list-rank">${index + 1}</div>
+                <div class="list-details">
+                  <div class="list-name">${team.name}</div>
+                </div>
+                <div class="list-score">
+                   Compleated
+                </div>
+              `;
+            }
+            else{
             listItem.innerHTML = `
                 <div class="list-rank">${index + 1}</div>
                 <div class="list-details">
@@ -43,6 +54,7 @@ async function loadLB(){
                    Level: ${team.level}
                 </div>
               `;
+            }
             leaderboardList.appendChild(listItem);
             if (index == 0){
                 document.getElementById("1stTeamName").textContent = `${team.name}`;
