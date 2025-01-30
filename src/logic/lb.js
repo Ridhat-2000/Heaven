@@ -65,13 +65,13 @@ async function loadLB(){
             } if (index == 1){
                 document.getElementById("2ndTeamName").textContent = `${team.name}`;
                 if(team.level == 11)
-                    document.getElementById("1stTeamPoint").textContent = "Compleated";
+                    document.getElementById("2ndTeamPoint").textContent = "Compleated";
                 else
                     document.getElementById("2ndTeamPoint").textContent = `${team.level}`;
             } if (index == 2){
                 document.getElementById("3rdTeamName").textContent = `${team.name}`;
                 if(team.level == 11)
-                    document.getElementById("1stTeamPoint").textContent = "Compleated";
+                    document.getElementById("3rdTeamPoint").textContent = "Compleated";
                 else
                     document.getElementById("3rdTeamPoint").textContent = `${team.level}`;
             }
