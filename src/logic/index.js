@@ -24,14 +24,13 @@ async function getLevelNum(){
         while (selectLevelNum.firstChild) {
             selectLevelNum.removeChild(selectLevelNum.firstChild);
         }
-        //new//
-        if(currentLevelNum == 11 || currentLevelNum == "11")
-            currentLevelNum = 10;
-        //end//
+        
         for(let i =0;i<=currentLevelNum;i++){
             const option = document.createElement("option");
             option.value = i;
             option.textContent = i;
+if(i=11)
+option.textContent = "Complete";
             selectLevelNum.appendChild(option);
             if (i == currentLevelNum)
                 option.selected = true;
