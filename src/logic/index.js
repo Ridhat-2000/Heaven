@@ -29,8 +29,8 @@ async function getLevelNum(){
             const option = document.createElement("option");
             option.value = i;
             option.textContent = i;
-if(i=11)
-option.textContent = "Complete";
+            if(i==11)
+                option.textContent = "Completed";
             selectLevelNum.appendChild(option);
             if (i == currentLevelNum)
                 option.selected = true;
