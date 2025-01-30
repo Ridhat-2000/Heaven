@@ -46,7 +46,7 @@ async function loadLB(){
             leaderboardList.appendChild(listItem);
             if (index == 0){
                 document.getElementById("1stTeamName").textContent = `${team.name}`;
-                document.getElementById("1stTeamPoint").textContent = `${team.level}`;
+                document.getElementById("1stTeamPoint").textContent = "WIN";//`${team.level}`;
             } if (index == 1){
                 document.getElementById("2ndTeamName").textContent = `${team.name}`;
                 document.getElementById("2ndTeamPoint").textContent = `${team.level}`;
