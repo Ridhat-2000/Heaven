@@ -58,13 +58,22 @@ async function loadLB(){
             leaderboardList.appendChild(listItem);
             if (index == 0){
                 document.getElementById("1stTeamName").textContent = `${team.name}`;
-                document.getElementById("1stTeamPoint").textContent = "WIN";//`${team.level}`;
+                if(team.level == 11)
+                    document.getElementById("1stTeamPoint").textContent = "WIN";//`${team.level}`;
+                else
+                    document.getElementById("1stTeamPoint").textContent = `${team.level}`;
             } if (index == 1){
                 document.getElementById("2ndTeamName").textContent = `${team.name}`;
-                document.getElementById("2ndTeamPoint").textContent = `${team.level}`;
+                if(team.level == 11)
+                    document.getElementById("1stTeamPoint").textContent = "Compleated";
+                else
+                    document.getElementById("2ndTeamPoint").textContent = `${team.level}`;
             } if (index == 2){
                 document.getElementById("3rdTeamName").textContent = `${team.name}`;
-                document.getElementById("3rdTeamPoint").textContent = `${team.level}`;
+                if(team.level == 11)
+                    document.getElementById("1stTeamPoint").textContent = "Compleated";
+                else
+                    document.getElementById("3rdTeamPoint").textContent = `${team.level}`;
             }
         });
 
